@@ -21,7 +21,7 @@ public class Vector {
 		}
 	}*/
 	
-	public void add(String element) throws Exception {
+	/*public void add(String element) throws Exception {
 		//Verifying if the length of the vector is large than the size. If yes we can add more elements. If not a message will appear.
 		if(this.size<this.elements.length) {
 			this.elements[this.size] = element;
@@ -29,5 +29,14 @@ public class Vector {
 		}else {
 			throw new Exception("The vector is full, this action is not possible");
 		}
+	}*/
+	
+	public boolean add(String element){
+		if(this.size<this.elements.length) {
+			this.elements[this.size] = element;
+			this.size++;
+			return true;
+		}
+		return false;
 	}
 }
