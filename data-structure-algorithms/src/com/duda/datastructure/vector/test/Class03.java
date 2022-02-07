@@ -8,6 +8,7 @@ public class Class03 {
 
 		Vector v = new Vector(2);
 
+		
 		v.add("first element");
 		v.add("2nd element");
 		v.add("3rd element");
