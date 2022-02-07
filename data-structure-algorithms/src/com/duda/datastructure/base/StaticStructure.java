@@ -76,4 +76,7 @@ public class StaticStructure<T> {
 
 		return s.toString();
 	}
+	public boolean IsEmpty() {
+		return this.size == 0;
+	}
 }
