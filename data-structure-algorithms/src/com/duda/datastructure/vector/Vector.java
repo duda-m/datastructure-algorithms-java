@@ -90,7 +90,7 @@ public class Vector {
 	
 	public String search(int position) {
 		if(!(position >=0 && position < size)) {
-			throw new IllegalArgumentException("Posição inválida");
+			throw new IllegalArgumentException("Invalid position");
 		}
 		return elements[position];
 	}
@@ -115,6 +115,16 @@ public class Vector {
 			}
 			this.elements = newElements;
 		}
+	}
+	
+	public void remove(int position) {
+		if(!(position >=0 && position < size)) {
+			throw new IllegalArgumentException("Invalid position");
+		}
+		for(int i = position; i <this.size-1; i++) {
+			this.elements[i] = this.elements[i+1];
+		}
+		this.size--;
 	}
 	
 }
