@@ -48,7 +48,24 @@ public class Vector {
 
 	@Override
 	public String toString() {
-		return Arrays.toString(elements);
+		
+		StringBuilder s = new StringBuilder();
+		s.append("]");
+		
+		//covers all elements of the vector, except the last one.
+		for(int i = 0; i < this.size-1; i++) {
+			s.append(this.elements[i]);
+			s.append(", ");
+		}
+		
+		//adds the last element of the vector
+		if(this.size > 0) {
+			s.append(this.elements[this.size-1]);
+		}
+		
+		s.append("]");
+		
+		return s.toString();
 	}
 	
 }
