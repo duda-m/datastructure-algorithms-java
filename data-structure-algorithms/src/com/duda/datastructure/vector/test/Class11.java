@@ -11,7 +11,7 @@ public class Class11 {
 				
 		vector.add("Element");		
 		//expects a string argument, this one doesn't work
-		vector.add(2);
+		//vector.add(2);
 		
 		System.out.println(vector);
 	}
