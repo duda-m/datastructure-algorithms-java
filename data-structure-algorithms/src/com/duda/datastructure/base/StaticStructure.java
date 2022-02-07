@@ -39,7 +39,7 @@ public class StaticStructure<T> {
 
 		return true;
 	}
-	public void increaseCapacity() {
+	protected void increaseCapacity() {
 		//checking if the vector is full. 
 		if(this.size == this.elements.length) {
 			//creating a new vector with twice the size of the old one
