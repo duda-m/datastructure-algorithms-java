@@ -1,5 +1,7 @@
 package com.duda.datastructure.vector;
 
+import java.util.Arrays;
+
 public class Vector {
 
 	private String[] elements;
@@ -43,4 +45,10 @@ public class Vector {
 	public int size() {
 		return this.size;
 	}
+
+	@Override
+	public String toString() {
+		return Arrays.toString(elements);
+	}
+	
 }
