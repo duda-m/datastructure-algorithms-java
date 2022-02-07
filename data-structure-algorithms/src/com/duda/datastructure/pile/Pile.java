@@ -19,5 +19,15 @@ public class Pile<T> extends StaticStructure<T> {
 		}
 		return this.elements[size-1];
 	}
+	public T unstack() {
+		if(this.IsEmpty()) {
+			return null;
+		}
+		T element = this.elements[size-1];
+		size--;
+		
+		return element;
+		/*return this.elements[--size];*/
+	}
 
 }
