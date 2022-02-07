@@ -12,7 +12,7 @@ public class StaticStructure<T> {
 	public StaticStructure() {
 		this(10);
 	}
-	public boolean add(T element){
+	protected boolean add(T element){
 		this.increaseCapacity();
 		if(this.size<this.elements.length) {
 			this.elements[this.size] = element;
@@ -21,7 +21,7 @@ public class StaticStructure<T> {
 		}
 		return false;
 	}
-	public boolean add(int position, T element) {
+	protected boolean add(int position, T element) {
 
 		//checking whether the position is valid 
 		if(!(position >=0 && position < size)) {
