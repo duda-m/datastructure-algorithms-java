@@ -50,7 +50,7 @@ public class Vector {
 	public String toString() {
 		
 		StringBuilder s = new StringBuilder();
-		s.append("]");
+		s.append("[");
 		
 		//covers all elements of the vector, except the last one.
 		for(int i = 0; i < this.size-1; i++) {
