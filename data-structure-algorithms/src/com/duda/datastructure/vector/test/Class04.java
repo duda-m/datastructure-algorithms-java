@@ -13,6 +13,8 @@ public class Class04 {
 		v.add("3rd element");
 
 		System.out.println(v.size());
+		
+		System.out.println(v.toString());
 
 	}
 
