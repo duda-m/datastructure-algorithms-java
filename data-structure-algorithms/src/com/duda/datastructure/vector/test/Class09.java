@@ -18,6 +18,17 @@ public class Class09 {
 		v.remove(1);
 		
 		System.out.println(v);
+		
+		System.out.println("Removing D element");
+		
+		int p = v.search("D");
+		if(p >= 0) {
+			v.remove(p);
+		}else {
+			System.out.println("Element doesn't exist");
+		}
+		
+		System.out.println(v);
 	}
 
 }
