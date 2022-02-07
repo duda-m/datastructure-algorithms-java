@@ -2,8 +2,8 @@ package com.duda.datastructure.base;
 
 public class StaticStructure<T> {
 
-	private T[] elements;
-	private int size;
+	protected T[] elements;
+	protected int size;
 
 	public StaticStructure(int capacity) {
 		this.elements = (T[])new Object[capacity];
