@@ -10,4 +10,8 @@ public class Pile<T> extends StaticStructure<T> {
 	public Pile(int capacity) {
 		super(capacity);
 	}
+	public void PileUp(T element) {
+		super.add(element);
+	}
+
 }
