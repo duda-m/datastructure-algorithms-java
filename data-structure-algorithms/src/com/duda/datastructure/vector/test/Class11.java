@@ -8,9 +8,11 @@ public class Class11 {
 	public static void main(String[] args) {
 		
 		List<String> vector = new List<String>(1);
+				
+		vector.add("Element");		
+		//expects a string argument, this one doesn't work
+		vector.add(2);
 		
-		
-		vector.add("Element");
 		System.out.println(vector);
 	}
 
