@@ -95,13 +95,13 @@ public class Vector {
 		return elements[position];
 	}
 	
-	public boolean search(String element) {
+	public int search(String element) {
 		for(int i = 0; i < size; i++) {
 			if(this.elements[i].equals(element)) {
-				return true;
+				return i;
 			}
 		}
-		return false;
+		return -1;
 	}
 	
 	public void increaseCapacity() {
