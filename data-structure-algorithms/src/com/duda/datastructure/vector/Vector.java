@@ -34,6 +34,7 @@ public class Vector {
 	}*/
 	
 	public boolean add(String element){
+		this.increaseCapacity();
 		if(this.size<this.elements.length) {
 			this.elements[this.size] = element;
 			this.size++;
@@ -48,6 +49,8 @@ public class Vector {
 		if(!(position >=0 && position < size)) {
 			throw new IllegalArgumentException("Invalid position");
 		}
+		
+		this.increaseCapacity();
 		
 		//moving the elements
 		for(int i = size-1; i >= position; i--) {
@@ -99,6 +102,19 @@ public class Vector {
 			}
 		}
 		return false;
+	}
+	
+	public void increaseCapacity() {
+		//checking if the vector is full. 
+		if(this.size == this.elements.length) {
+			//creating a new vector with twice the size of the old one
+			String[] newElements = new String[this.elements.length*2];
+			
+			for(int i = 0; i < this.elements.length; i++) {
+				newElements[i] = this.elements[i];
+			}
+			this.elements = newElements;
+		}
 	}
 	
 }
