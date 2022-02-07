@@ -13,5 +13,11 @@ public class Pile<T> extends StaticStructure<T> {
 	public void PileUp(T element) {
 		super.add(element);
 	}
+	public T top() {
+		if(this.IsEmpty()) {
+			return null;
+		}
+		return this.elements[size-1];
+	}
 
 }
