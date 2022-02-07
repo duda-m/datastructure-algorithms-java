@@ -35,7 +35,7 @@ public class Vector {
 		if(this.size<this.elements.length) {
 			this.elements[this.size] = element;
 			this.size++;
-			return true;
+			
 		}
 		return false;
 	}
