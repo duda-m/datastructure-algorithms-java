@@ -73,6 +73,10 @@ public class List<T> {
 		}
 		return elements[position];
 	}
+	//this method does the same thing as the search(int position) method
+	public T obtem(int position) {
+		return this.search(position);
+	}
 
 	public int search(T element) {
 		for(int i = 0; i < size; i++) {
