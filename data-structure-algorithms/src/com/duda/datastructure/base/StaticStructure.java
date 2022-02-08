@@ -79,4 +79,13 @@ public class StaticStructure<T> {
 	public boolean IsEmpty() {
 		return this.size == 0;
 	}
+	protected void remove(int position){
+		if (!(position >= 0 && position < size)){
+			throw new IllegalArgumentException("Invalid Position");
+		}
+		for (int i=position; i<size-1; i++){
+			elements[i] = elements[i+1];
+		}
+		size--;
+	}
 }
