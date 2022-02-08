@@ -130,4 +130,8 @@ public class List<T> {
 		}
 		return -1;
 	}
+	
+	public void limpar() {
+		this.size = 0;
+	}
 }
