@@ -133,5 +133,16 @@ public class List<T> {
 	
 	public void limpar() {
 		this.size = 0;
+		
+		//2option
+		//this.elements = (T[]) new Object[this.elements.length];
+		
+		//3option
+		/*for(int i =0; i < this.size; i++){
+			this.elements[i] = null;
+		}
+		this.size = 0;
+		*/
+	
 	}
 }
