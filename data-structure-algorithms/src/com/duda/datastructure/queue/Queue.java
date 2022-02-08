@@ -10,7 +10,7 @@ public class Queue<T> extends StaticStructure<T> {
 	public Queue(int capacity) {
 		super(capacity);
 	}
-	public void Queue(T element) {
+	public void Queues(T element) {
 		/*this.elements[this.size] = elements;
 		this.size++;
 
@@ -19,5 +19,13 @@ public class Queue<T> extends StaticStructure<T> {
 		this.add(element);
 
 	}
+	public T peek(){
 
+		if (this.IsEmpty()){
+			return null;
+		}
+
+		return this.elements[0];
+	}
+	
 }
