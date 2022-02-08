@@ -8,9 +8,9 @@ public class Class20 {
 		
 		Queue<Integer> q = new Queue<Integer>();
 		
-		q.Queue(1);
-		q.Queue(2);
-		q.Queue(3);
+		q.Queues(1);
+		q.Queues(2);
+		q.Queues(3);
 
 		System.out.println(q.IsEmpty());
 		System.out.println(q.size());
