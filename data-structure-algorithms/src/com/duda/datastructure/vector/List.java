@@ -105,4 +105,11 @@ public class List<T> {
 		}
 		this.size--;
 	}
+	public boolean contem(T element) {
+		int pos = search(element);
+		if(pos >=0) {
+			return true;
+		}
+		return false;
+	}
 }
