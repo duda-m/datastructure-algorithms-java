@@ -105,6 +105,12 @@ public class List<T> {
 		}
 		this.size--;
 	}
+	public void remove(T element) {
+		int p = this.search(element);
+		if(p>=0) {
+			this.remove(p);
+		}
+	}
 	public boolean contem(T element) {
 		int pos = search(element);
 		if(pos >=0) {
