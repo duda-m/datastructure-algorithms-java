@@ -27,5 +27,21 @@ public class Queue<T> extends StaticStructure<T> {
 
 		return this.elements[0];
 	}
-	
+	public T dequeue(){
+
+		final int pos = 0;
+
+		if (this.IsEmpty()){
+			return null;
+		}
+
+		T elementtoberemoved = this.elements[pos];
+
+		this.remove(pos);
+
+		return elementtoberemoved;
+
+	}
+
+
 }
