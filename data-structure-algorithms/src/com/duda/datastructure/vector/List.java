@@ -112,12 +112,12 @@ public class List<T> {
 		}
 		return false;
 	}
+	
+	//more efficiently
 	public int ultimoIndice(T element) {
-		int lastPos = 0;
-		for(int i = 0; i <this.size; i++) {
-			lastPos = i;
+		for(int i = this.size-1; i >= 0; i--) {
+			return i;
 		}
-		
-		return lastPos;
+		return -1;
 	}
 }
