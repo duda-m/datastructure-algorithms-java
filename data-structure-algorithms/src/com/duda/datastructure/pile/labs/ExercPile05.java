@@ -24,7 +24,7 @@ public class ExercPile05 {
 
 		solution("ABCD");
 
-		solution("Maria");
+		solution("Galinha");
 		 */
 
 	}
