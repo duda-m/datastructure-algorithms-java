@@ -73,6 +73,10 @@ public class List<T> {
 		}
 		return elements[position];
 	}
+	//this method does the same thing as the search(int position) method
+	public T obtem(int position) {
+		return this.search(position);
+	}
 
 	public int search(T element) {
 		for(int i = 0; i < size; i++) {
@@ -105,11 +109,40 @@ public class List<T> {
 		}
 		this.size--;
 	}
+	public void remove(T element) {
+		int p = this.search(element);
+		if(p>=0) {
+			this.remove(p);
+		}
+	}
 	public boolean contem(T element) {
 		int pos = search(element);
 		if(pos >=0) {
 			return true;
 		}
 		return false;
+	}
+	
+	//more efficiently
+	public int ultimoIndice(T element) {
+		for(int i = this.size-1; i >= 0; i--) {
+			return i;
+		}
+		return -1;
+	}
+	
+	public void limpar() {
+		this.size = 0;
+		
+		//2option
+		//this.elements = (T[]) new Object[this.elements.length];
+		
+		//3option
+		/*for(int i =0; i < this.size; i++){
+			this.elements[i] = null;
+		}
+		this.size = 0;
+		*/
+	
 	}
 }
