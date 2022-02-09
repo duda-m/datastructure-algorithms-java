@@ -7,7 +7,7 @@ public class ExercPile03 {
 	public static void main(String[] args) {
 
 
-		Pile<Livro> p = new Pile<Livro>(20);
+		Pile<Livro> p = new Pile<Livro>(5);
 
 		Livro l1 = new Livro();
 		l1.setNome("Breves respostas para grandes questões");
@@ -16,28 +16,28 @@ public class ExercPile03 {
 		l1.setIsbn("855100431X");
 
 		Livro l2 = new Livro();
-		l1.setNome("Teoria da relatividade: sobre a teoria da relatividade especial e geral");
-		l1.setAutor("Albert Einstein");
-		l1.setAnoLancamento(2015);
-		l1.setIsbn("852543275X");
+		l2.setNome("Teoria da relatividade: sobre a teoria da relatividade especial e geral");
+		l2.setAutor("Albert Einstein");
+		l2.setAnoLancamento(2015);
+		l2.setIsbn("852543275X");
 
 		Livro l3 = new Livro();
-		l1.setNome("Cosmos");
-		l1.setAutor("Carl Sagan");
-		l1.setAnoLancamento(2017);
-		l1.setIsbn("8535929886");
+		l3.setNome("Cosmos");
+		l3.setAutor("Carl Sagan");
+		l3.setAnoLancamento(2017);
+		l3.setIsbn("8535929886");
 
 		Livro l4 = new Livro();
-		l1.setNome("Astrofísica para apressados");
-		l1.setAutor("Neil deGrasse Tyson");
-		l1.setAnoLancamento(2020);
-		l1.setIsbn("6555351284");
+		l4.setNome("Astrofísica para apressados");
+		l4.setAutor("Neil deGrasse Tyson");
+		l4.setAnoLancamento(2020);
+		l4.setIsbn("6555351284");
 
 		Livro l5 = new Livro();
-		l1.setNome("Buracos Negros: Palestra da BBC Reith Lectures");
-		l1.setAutor("Stephen Hawking");
-		l1.setAnoLancamento(2017);
-		l1.setIsbn("8551000985");
+		l5.setNome("Buracos Negros: Palestra da BBC Reith Lectures");
+		l5.setAutor("Stephen Hawking");
+		l5.setAnoLancamento(2017);
+		l5.setIsbn("8551000985");
 
 		System.out.println("Pile is empty: " + p.IsEmpty());
 
